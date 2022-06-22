@@ -1,29 +1,93 @@
-
-
-
-.form {
-    background: #fff;
-    width: 300px;
-    margin: auto;
-    padding: 50px;
-    border-radius: 5px;
-    text-align: center;
+html,body{
+    margin: 0px;
 }
 
-.form input   {
-    width: 100%;
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfbfb;
+}
+
+.card   {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
+    border-color: rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    color: #291f1f;
+    
+    min-width: 33%;
+    min-height: 33%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 0.15;
+
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.05) ;
+}
+
+.sign-in {
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+}
+
+
+.password-con {
+    margin: 20px;
+}
+
+input[type=password] {
+    border: 0px;
+    border-bottom: 1px solid #291f1f;  
+}
+
+
+.username-con {
+    margin: 20px;
+}
+
+input[submit=text] {
+    border: 0px;
+    border-bottom: 1px solid #291f1f;
+}
+
+
+.submit-button {
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+#submit {
+    background-color: #1390de;
+    color: #fbfbfb;
+    border: 0px;
+    border-radius: 35px 35px 35px 35px;
     padding: 10px;
-    border: none;
-    border-bottom: 2px solid #d9d9d9;
-    margin: 10px 0;
+    margin-bottom: 5px;
+    transition: 0.5s;
+    width: 200px;
 }
 
-.form button {
-    background: rgb(11, 127, 222);
-    width: 100%;
-    color: white;
-    border-radius: 50px;
-    text-align: center;
-    padding: 10px 0;
-    margin: 20px 0;
+#submit:hover {
+    background-color: #1390deba;
+    color: #fbfbfb;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}
+
+#submit:active {
+    background-color: #1390de;
+    color: #fbfbfb;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 5px 5px 0 rgba(0,0,0,0.19);
+    transition: 0.2s;
+}
+
+
+input:focus {
+    outline: none;
 }
